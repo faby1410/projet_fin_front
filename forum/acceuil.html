@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum d'Échange Étudiants</title>
+    <link rel="stylesheet" href="../css/forum.css">
+    <script src="../js/auth.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="brand">
+            <h2><span class="dit">DIT</span><span class="class-darkset">GUIDE</span></h2>
+        </a>
+        <ul class="navigation">
+            
+            <li class="active nav-item">
+                    <a class="navlink" href="index.html">Accueil</a>
+            </li>
+            <li class="dropdown nav-item">
+                    <a class="navlink" href=".html"
+                    >Sujets</a
+                    >
+                    <ul class="dropdown-content">
+                    <li><a href="sujet/.html">Licence 1</a></li>
+                    <li><a href="sujet/.html">Licence 2</a></li>
+                    <li><a href="sujet/.html">Licence 3</a></li>
+                    <li><a href="sujet/.html">Master 1</a></li>
+                    <li><a href="sujet/.html">Master 2</a></li>
+                    </ul>
+            </li>
+          
+            <li class="nav-item">
+              <a href="profil/.html" class="navlink">
+                Emploie
+              </a>
+            </li>
+            <li class="dropdown nav-item btn-primary">
+                <a href="auth/etu.html" class="navlink">
+                    Connexion
+                </a>
+            </li>
+            <li class="dropdown nav-item btn btn-primary">
+                <a href="auth/admin.html" class="navlink">
+                    Adminstration
+                </a>
+            </li>
+            
+            <a href="profil/.html">
+              <img
+                class="avatar"
+                src="../assets/img/IMG_1982.JPG"
+                width="50"
+                height="50"
+                alt="avatar"
+              />
+            </a>
+            
+
+            </li>
+            
+        </ul>
+
+       
+  
+    </nav>
+    <header>
+        <div class="header-left">
+          <h1>Sentez vous compris par vos confrères</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            adipisci laborum sunt perspiciatis amet beatae?
+          </p>
+          <div>
+            <a href="forum/" class="btn-primary navlink">Forum</a>
+            <a href="auth/etu.html" class="btn-outline linkspe ">Connexion</a>
+          </div>
+        </div>
+        <img src="../assets/img/blockchain-min.webp" alt="etudiant"  height="400" width="600" />
+      </header>
+
+     <div class="forum-container">
+        <!-- Liste des discussions -->
+        <div class="discussion-list">
+            <h2>Discussions Actuelles</h2>
+            <ul>
+                <li>
+                    <a href="#">Comment préparer son projet de fin d'études ?</a>
+                    <p>Posté par Alice - 12 réponses</p>
+                </li>
+                <li>
+                    <a href="#">Les meilleures ressources pour apprendre Python</a>
+                    <p>Posté par Mohamed - 8 réponses</p>
+                </li>
+                <li>
+                    <a href="#">Conseils pour réussir en Master 2</a>
+                    <p>Posté par Clara - 5 réponses</p>
+                </li>
+                <li>
+                    <a href="">Comment rediger son mémoire</a>
+                    <p>Posté par Falilou - 12 réponses</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Formulaire de création de sujet -->
+        <div class="new-topic">
+            <h2>Créer une Nouvelle Discussion</h2>
+            <form action="#" method="POST">
+                <label for="topic-title">Titre de la Discussion :</label>
+                <input type="text" id="topic-title" name="topic-title" placeholder="Entrez un titre" required>
+
+                <label for="topic-content">Contenu :</label>
+                <textarea id="topic-content" name="topic-content" rows="5" placeholder="Entrez votre question ou sujet de discussion" required></textarea>
+
+                <button type="submit">Poster la Discussion</button>
+            </form>
+        </div>
+      </div>
+
+  </body>
+  <footer>
+    <p>&copy; copyright Fatou Bintou NDIAYE - 2024</p>
+  </footer>
+
+</html>

@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+/* RESET AND GLOBALS */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+
+  /* CSS Variables for colors */
+  --text: #040507;
+  --background: #f1f4f9;
+  --primary: #064852;
+  --secondary: #87d7bf;
+  --accent: #38686d;
+
+
+
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+  font-size: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--text);
+  background-color: inherit;
+}
+
+footer p {
+  background-color: var(--text);
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li > a:hover,
+a.navlink:hover {
+  color: var(--primary);
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+
+h2.subtitle {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 1em 0;
+  color: var(--text);
+}
+
+
+
+
+
+svg {
+  background-color: transparent;
+}
+
+select {
+  padding: 0.5em 3em 0.5em 0.5em;
+  border: 1px solid var(--text);
+  border-radius: 0.5em;
+  position: relative;
+}
+
+/* ############################################################ */
+ /* ############################################################ */
+  
+  /* BUTTONS */
+  .btn-primary {
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 0.8em 0.7em;
+    width: fit-content;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .btn-outline {
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    color: var(--text);
+    padding: 0.8em 0.7em;
+    width: fit-content;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .btn-ghost {
+    background-color: white;
+    color: var(--text);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--accent);
+  }
+  
+  .btn-outline:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+  a.linkspe{
+    color: var(--primary);
+  }
+  a.linkspe:hover{
+    text-decoration:underline ;
+  }
+
+  /* ############################################################ */
+  
+  /* NAVIGATION */
+  a.brand h2 {
+    color: var(--text);
+  }
+  
+  span.text-darkest {
+    color: var(--text);
+  }
+  span.dit{
+    color: var(--primary);
+  }
+
+  nav.navbar {
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--text);
+    padding: 1em 4em;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+  
+  ul.navigation {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  li.nav-item {
+    font-weight: normal;
+  }
+  
+  li.dropdown-item {
+    display: none;
+  }
+  
+  ul.dropdown-content {
+    padding: 1em;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    z-index: 1;
+  }
+  
+  ul.dropdown-content > li {
+    color: var(--text);
+  }
+  
+  ul.dropdown-content > li > a {
+    background-color: white;
+    display: block;
+    padding: 0.5em;
+  }
+  
+  li.dropdown:hover ul.dropdown-content {
+    display: block;
+  }
+  
+  li.active {
+    color: var(--primary);
+  }
+  
+  img.avatar {
+    border-radius: 50%;
+    width: 2em 1.5em;
+  }
+   /* ############################################################ */
+  /* HEADER */
+  
+div.banner {
+    width: 60%;
+    padding: 1.5em 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+   
+  }
+  
+  div.banner h3 {
+   text-decoration: var(--secondary);
+    font-weight: normal;
+  }
+  
+  div.banner a.more {
+    background-color: inherit;
+    color: var(--background);
+    font-weight: normal;
+  }
+  
+  a.more:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+  }
+  
+  main.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1em 4em;
+    gap: 4em;
+  }
+  
+  main.content h1,
+  h2,
+  h3 {
+    color: var(--text);
+  }
+  
+  header{
+    display: flex;
+    background-color: var(--background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary);
+   
+  }
+  
+  .header-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+  }
+  
+  header>img{
+    padding-left: 3em;
+  }
+  /* ############################################################ */
+  
+  
+  /* ############################################################ */
+ 
+.forum-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.discussion-list, .new-topic {
+    width: 48%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.discussion-list h2, .new-topic h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+
+ul li p {
+    font-size: 14px;
+    color: #777;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+

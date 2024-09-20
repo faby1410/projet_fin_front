@@ -25,6 +25,8 @@ function handleUserForm(event) {
     })
 }
 
+
+const addSubjectForm = document.querySelector("form#add-subject")
 addSubjectForm.addEventListener("submit", handleSubjectForm)
 function handleSubjectForm(event) {
     event.preventDefault()
@@ -37,7 +39,6 @@ function handleSubjectForm(event) {
         niveau : dataObject.subject-level,
         enseignant : dataObject.prof,
         annee_pub: dataObject.annee_pub,
-       
         creation : new Date()
     }
     console.log(payload)

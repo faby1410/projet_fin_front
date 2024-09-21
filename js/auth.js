@@ -1,4 +1,4 @@
-
+// creation et recuperation cookie
 function setCookie(name, value, days){
     const date = new Date();
     date.setTime(date.getTime() + (days * 24 * 60 *60 * 1000));
@@ -6,7 +6,7 @@ function setCookie(name, value, days){
     document.cookie = name + "=" + value + ";" + expires +";path=/";
 }
 
-window.onload = adminredirection()
+// window.onload = adminredirection()
 
 function getCookie(name){
     let cookieArr = document.cookie.split(";")
@@ -42,6 +42,8 @@ function handleConnectAdminForm(event) {
         password : dataObject.password_admin,
     
 }
+
+// recup info auth form
 console.log(payload)
 fetch("https://fasti-test-production.up.railway.app/auth/admin", {
     method: "POST",

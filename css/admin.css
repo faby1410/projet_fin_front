@@ -50,6 +50,11 @@ footer p {
   color: white;
   padding: 1em 0;
   text-align: center;
+
+}
+
+footer{
+  margin-top: auto;
 }
 
 a {
@@ -131,7 +136,9 @@ select {
     color: white;
   }
  
-
+#barre_recher{
+  width: 500px;
+}
 /* ############################################################ */
 .content{
     width: 100%;
@@ -184,6 +191,7 @@ span.text-darkest {
     margin-left: 270px;
     padding: 20px;
     width: 100%;
+    height: 100%;
 }
 
 .section {

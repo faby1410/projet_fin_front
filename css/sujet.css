@@ -36,36 +36,9 @@ div.table {
     background-color: #fff6;
   }
   
-  .badge {
-    background-color: red;
-    color: white;
-    width: fit-content;
-    padding: 0.5em 1em;
-    border-radius: 2em;
-  }
-  
-  .badge.first {
-    background-color: #6fcaea;
-    color: #07739a;
-  }
-  
-  .badge.second {
-    background-color: #d893a3;
-    color: #b30021;
-  }
-  
-  .badge.third {
-    background-color: #ebc474;
-    color: #805704;
-  }
-  
-  .badge.forth {
-    background-color: #86e49d;
-    color: #006b21;
-  }
   
   div.data-table {
-    width: fit-content;
+    width: 100%;
   }
   
   div.table-filters {

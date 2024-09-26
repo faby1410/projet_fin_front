@@ -261,6 +261,7 @@ main.content {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
   padding: 1em 4em;
   gap: 4em;
 }
